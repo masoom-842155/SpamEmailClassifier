@@ -171,7 +171,7 @@ def extract_features(text):
 # Load and preprocess data
 @st.cache_data
 def load_data():
-    data = pd.read_csv("D:\\spam.csv")
+    data = pd.read_csv("spam.csv")
     data.drop_duplicates(inplace=True)
     data['Category'] = data['Category'].replace(['ham', 'spam'], ['Not Spam', 'Spam'])
     
