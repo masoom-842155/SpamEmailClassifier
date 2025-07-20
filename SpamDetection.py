@@ -60,7 +60,7 @@ st.markdown("""
 def connect_to_database():
     try:
         connection = mysql.connector.connect(
-            host="spamemailclassifier0.streamlit.app:3306",
+            host="localhost:3306",
             user="root",
             password="masoom842155",
             database="spam_classifier"
